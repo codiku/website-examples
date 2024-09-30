@@ -1,23 +1,36 @@
+.content-container{
+  display: grid;
+  gap:20px;
+  grid-template-columns: 3fr 1fr;
+}
 
-  .dessert-card {
-    cursor: pointer;
-  }
+.dessert-grid{
+  gap:20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
 
-  .dessert-card-img {
-    border-radius: 10px;
-    width: 240px;
-    height:200px;
-    object-fit: cover;
-  }
-  
-  .dessert-type {
-    margin-top: 20px;
-    color: #888;
-  }
-  
-  .dessert-price {
-    color: #e67e22;
-    font-weight: bold;
-  }
+.dessert-card-img{
+  width:240px;
+  height:200px;
+}
 
-  
+
+.cart-container{
+ border-radius: 8px;
+ padding:20px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ color:#e67e22;
+ width: 400px;
+ height: 300px;
+}
+
+.cart-img{
+  display: block;
+  width:100px;
+  margin:auto;
+}
+
+.cart-text{
+  text-align: center;
+}
