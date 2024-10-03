@@ -177,6 +177,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    height: fit-content;
 }
 
 .quantity-btn {
@@ -196,32 +197,32 @@ main {
 .buy-now-btn {
     background-color: black;
     position: relative;
-    padding:24px 44px;
+    padding:12px 34px;
     border: none;
     border: 0px;
     border-radius: 40px;
     color: white;
     font-weight: bold;
-    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: fit-content;
    
 }
 
 
 
 .buy-now-btn-icon {
-    top: 12px;
+    top: 15%;
     left: 12px;
     font-size: 1rem;
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
     color:black;
     border-radius: 50%;
     background-color: var(--primary-color);
     position: absolute;
-    padding-top: 11px;
+    padding-top: 5px;
 
 }
 
@@ -319,4 +320,32 @@ main {
 .basket-icon-container:hover {
     transform: scale(1.5);
 }
+
+
+/*
+    Responsive Design
+*/
+
+
+@media screen and (max-width: 1424px) {
+    .right-section {
+        display: none;
+    }
+    body {
+        padding: 20px 20px;
+    }
+    nav {
+        flex-direction: column;
+        gap:40px;
+    }
+
+    h2, p{
+        text-align: center;
+    }
+    .main-section {
+      align-items: center;
+    }
+}
+
+
 
