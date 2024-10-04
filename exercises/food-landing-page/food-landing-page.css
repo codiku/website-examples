@@ -241,8 +241,8 @@ main {
     padding-bottom: 20px;
     justify-content: flex-end;
     position: fixed;
-    right: 16%;
-    top: 40%;
+    right: 21%;
+    top: 350px;
     font-size: 1rem;
     line-height: 1.5;
     color: var(--text-color-light);
@@ -268,10 +268,10 @@ main {
 }
 
 .product-image {
-    height: 50vh;
+    height: 450px;
     position: fixed;
-    top: 25%;
-    right: 10%;
+    top: 200px;
+    right: 15%;
     z-index: 2;
 }
 
