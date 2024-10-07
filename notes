@@ -11,6 +11,11 @@
                     </button>
  </div>
 
+.actions-btn-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+}
 
 
 .qty-btn-container {
@@ -31,11 +36,6 @@
 
 
 
-.actions-btn-container {
-    margin-top: 20px;
-    display: flex;
-    gap: 40px;
-}
 
 .buy-now-btn {
     background-color: black;
