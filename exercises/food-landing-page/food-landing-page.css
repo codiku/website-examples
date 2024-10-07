@@ -1,351 +1,92 @@
-  /* Variables */
-  :root {
-    --primary-color: rgb(253, 218, 129);
-    --secondary-color: rgb(250, 133, 0);
-    --text-color-dark: rgb(51, 51, 51);
-    --text-color-light: white;
-    --text-color-muted: rgb(153, 153, 153);
-  }
+/*  Variables */
+:root {
+    --text-color-dark: rgb(51,51,51);
+    --primary-color:rgb(253,218,129);
+    --secondary-color: rgb(250,133,0);
+}
 
-
-/* General Styles */
+/* General tags */
 
 * {
     box-sizing: border-box;
     margin: 0;
-  }
-body {
-    margin: 0;
-    font-family: Poppins, Arial;
-    line-height: 1rem;
-    color: var(--text-color);
-    height: 100vh ;
-    display: flex;
-    flex-direction: column;
-    padding:  20px 120px;
-  }
+}
 
-  h1 {
+h1{
     font-size: 2rem;
-  }
+}
+body{
+    font-family: Poppins, Arial;
+    color : var(--text-color-dark);
+    padding: 20px 120px;
+}
 
-h2 {
-    font-size: 3.5rem;
-    line-height: 1.2;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-color-dark);
+    font-weight:bold;
 }
-a:hover {
+
+a:hover{
     text-decoration: underline;
 }
 
-p{
-    line-height: 1.5;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-}
-button {
+button{
     border-radius: 20px;
     padding: 10px 30px;
     cursor: pointer;
 }
 
-/* Navigation Styles */
+/* Nav section */
 
-
-.logo-letter-1 {
+.logo-letter-1{
     color: var(--primary-color);
 }
 
-.logo-letter-2 {
+.logo-letter-2{
     color: var(--secondary-color);
 }
-
-.nav-links {
+.nav-links{
     display: flex;
-    gap: 30px;
+    gap:30px;
 }
 
-
-
-.nav-icons {
+.nav-icons{
     display: flex;
     gap: 40px;
+    align-items: center;
 }
 
-.search-icon,
-.basket-icon{
-   cursor: pointer;
-}
-.basket-icon-container {
+.basket-icon-container{
     position: relative;
 }
 
-.basket-count {
-    left: 10px;
-    top: 10px;
-    position: absolute;
-    font-size: 0.6rem;
+.basket-count{
+    top:10px;
+    left:10px;
     background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 50%;
     height: 15px;
     width: 15px;
-    color: var(--text-color-light);
-    border-radius: 50%;
-}
-
-
-.nav-btn {
+    font-size: 0.6rem;
+    color:white;
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
 }
 
-.sign-in-btn,
-.sign-up-btn {
-    display: flex;
-    gap: 10px;
-    font-weight: bold;
-    color: var(--text-color-dark);
-}
-.sign-in-btn {
+.sign-in-btn{
     border: 1px solid var(--text-color-dark);
-    
 }
-.sign-up-btn {
+
+.sign-up-btn{
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
 }
-
-/* Main Content Styles */
-main {
-    display: flex;
-    flex:1;
-    flex-direction: column;
-}
-
-
-/* Main Section Styles */
-.main-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex:1;
-    margin-top: 10%;
-}
-
-.highlight-text {
-    color: var(--text-color-dark);
-    font-weight: bold;
-}
-
-
-
-.description {
-    color: var(--text-color-muted);
-}
-
-.title-thin {
-    font-weight: 200;
-}
-
-.main-section p {
-}
-
-.order-details {
-    margin-top: 40px;
-}
-
-.total-order {
-    font-size: 2.5rem;
-    font-weight: 100;
-}
-
-.qty-btn-container {
-    border: 1px solid var(--secondary-color);
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    height: fit-content;
-}
-
-.quantity-btn {
-    border: none;
-    background-color: transparent;
-    color: var(--secondary-color);
-}
-
-
-
-.actions-btn-container {
-    margin-top: 20px;
-    display: flex;
-    gap: 40px;
-}
-
-.buy-now-btn {
-    background-color: black;
-    position: relative;
-    padding:12px 34px;
-    border: none;
-    border: 0px;
-    border-radius: 40px;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
-   
-}
-
-
-
-.buy-now-btn-icon {
-    top: 15%;
-    left: 12px;
-    font-size: 1rem;
-    width: 28px;
-    height: 28px;
-    color:black;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    position: absolute;
-    padding-top: 5px;
-
-}
-
-.buy-now-btn-text {
-    margin-left: 20px;
-}
-
-/* Image Section Styles */
-
-
-.product-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    padding-bottom: 20px;
-    justify-content: flex-end;
-    position: fixed;
-    right: 21%;
-    top: 350px;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--text-color-light);
-    height: 400px;
-    width: 250px;
-    border-radius: 30px;
-    background-color: var(--secondary-color);
-}
-
-.product-name {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    font-size: x-large;
-}
-
-.delivery-time {
-    display: flex;
-    gap: 10px;
-    background-color: black;
-    padding: 10px 16px;
-    border-radius:30px;
-}
-
-.product-image {
-    height: 450px;
-    position: fixed;
-    top: 200px;
-    right: 15%;
-    z-index: 2;
-}
-
-
-.background-image {
-    height: 105vh;
-    filter: brightness(1.3);
-    width: 900px;
-    position: fixed;
-    top: -2.5%;
-    right: -20%;
-    z-index: -3;
-    border-radius: 100%;
-}
-
-
-/* 
-    Animations
-*/
-
-.search-icon,
-.basket-icon-container,
-.sign-in-btn,
-.buy-now-btn,
-.sign-up-btn,
-.qty-btn-container,
-.buy-now-btn ,
-.search-icon:hover,
-.basket-icon-container:hover{
-    transition: transform 0.3s ease-in-out;
-}
-
-
-.search-icon:hover,
-.basket-icon-container:hover,
-.sign-in-btn:hover,
-.buy-now-btn:hover,
-.sign-up-btn:hover,
-.qty-btn-container:hover,
-.buy-now-btn:hover {
-    transform: scale(1.1);
-}
-
-/* Bigger zoom for icons*/
-.search-icon:hover,
-.basket-icon-container:hover {
-    transform: scale(1.5);
-}
-
-
-/*
-    Responsive Design
-*/
-
-
-@media screen and (max-width: 1424px) {
-    .right-section {
-        display: none;
-    }
-    body {
-        padding: 20px 20px;
-    }
-    nav {
-        flex-direction: column;
-        gap:40px;
-    }
-
-    h2, p{
-        text-align: center;
-    }
-    .main-section {
-      align-items: center;
-    }
-}
-
-
-
