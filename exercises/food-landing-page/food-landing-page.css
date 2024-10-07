@@ -147,6 +147,23 @@ button{
     filter: brightness(1.3);
 }
 
+.actions-btn-container{
+    display:flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+.qty-btn-container{
+    border: 1px solid var(--secondary-color);
+    border-radius: 40px;
+}
+.qty-btn{
+    background-color:transparent;
+    border: none;
+    height: 100%;
+    color: var(--secondary-color);
+}
+
+
 /* Product banner */
 
 .product-banner{
@@ -174,9 +191,6 @@ button{
     gap:40px;
 }
 
-.product-rating{
-
-}
 
 .delivery-time{
     background-color: black;
@@ -186,3 +200,4 @@ button{
     align-items: center;
     gap:20px;
 }
+
