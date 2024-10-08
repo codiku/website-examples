@@ -1,43 +1,23 @@
-   <button class="buy-now-btn">
-                            <i class="fa-solid fa-bag-shopping buy-now-btn-icon"></i>
-                            <span class="buy-now-btn-text">Buy</span>
-            
-                    </button>
 
+/* Animations */
 
-
-.buy-now-btn {
-    background-color: black;
-    position: relative;
-    padding:12px 34px;
-    border: none;
-    border: 0px;
-    border-radius: 40px;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
-   
+.fa-magnifying-glass,
+.basket-icon-container,
+.sign-in-btn,
+.sign-up-btn,
+.buy-btn {
+    transition: transform 0.3s ease-in-out;
 }
 
 
-
-.buy-now-btn-icon {
-    top: 15%;
-    left: 12px;
-    font-size: 1rem;
-    width: 28px;
-    height: 28px;
-    color:black;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    position: absolute;
-    padding-top: 5px;
-
+.sign-in-btn:hover,
+.sign-up-btn:hover,
+.buy-btn:hover {
+    transform: scale(1.1);
 }
 
-.buy-now-btn-text {
-    margin-left: 20px;
+
+.fa-magnifying-glass:hover,
+.basket-icon-container:hover {
+    transform: scale(1.3);
 }
