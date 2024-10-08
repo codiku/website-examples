@@ -1,39 +1,8 @@
- <div class="actions-btn-container">
-                    <div class="qty-btn-container">
-                        <button class="quantity-btn"><i class="fa-solid fa-chevron-down"></i></button>
-                        <span class="quantity">2</span>
-                        <button class="quantity-btn"><i class="fa-solid fa-chevron-up"></i></button>
-                    </div>
-                    <button class="buy-now-btn">
+   <button class="buy-now-btn">
                             <i class="fa-solid fa-bag-shopping buy-now-btn-icon"></i>
                             <span class="buy-now-btn-text">Buy</span>
             
                     </button>
- </div>
-
-.actions-btn-container {
-    margin-top: 20px;
-    display: flex;
-    gap: 40px;
-}
-
-
-.qty-btn-container {
-    border: 1px solid var(--secondary-color);
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    height: fit-content;
-}
-
-.quantity-btn {
-    border: none;
-    background-color: transparent;
-    color: var(--secondary-color);
-}
-
 
 
 
