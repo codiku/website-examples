@@ -234,3 +234,50 @@ button{
     gap:20px;
 }
 
+
+/* Animations */ 
+
+.fa-magnifying-glass,
+.basket-icon-container,
+.sign-in-btn,
+.sign-up-btn,
+.buy-btn {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.sign-in-btn:hover,
+.sign-up-btn:hover,
+.buy-btn:hover {
+    transform: scale(1.1);
+}
+
+.fa-magnifying-glass:hover,
+.basket-icon-container:hover{
+    transform: scale(1.3); 
+}
+
+/* Mobile responsive design */
+
+@media screen and (max-width: 1480px){
+ nav {
+    flex-direction: column;
+    gap: 40px;
+ }
+ h2, p{
+    text-align: center;
+ }
+
+ body{
+    padding: 20px;
+ }
+
+ .image-section{
+    display: none;
+ }
+
+ .main-section{
+    align-items: center;
+ }
+
+}
