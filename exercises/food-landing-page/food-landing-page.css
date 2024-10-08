@@ -163,39 +163,6 @@ button{
     color: var(--secondary-color);
 }
 
-.buy-btn{
-    width: 100px;
-    position: relative;
-    background-color: black;
-    border: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.buy-btn-icon-container{
-    position: absolute;
-    left:5px;
-    background-color: var(--primary-color);
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.buy-btn-icon{
-
-    color: black;
-
-}
-
-.buy-btn-text{
-    padding-left:12px;
-    font-weight: bold;
-}
-
 
 /* Product banner */
 
